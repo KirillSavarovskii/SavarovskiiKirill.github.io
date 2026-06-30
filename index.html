@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Саворовский Кирилл Александрович</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --accent-color: #2c3e50;
+            --link-color: #3498db;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: var(--card-bg);
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--accent-color);
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .interest-tag {
+            background: var(--bg-color);
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+
+        .interest-tag:hover {
+            transform: translateY(-3px);
+            background: #e2e8f0;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid var(--accent-color);
+            background: var(--bg-color);
+            border-radius: 0 6px 6px 0;
+        }
+
+        .project-item h3 {
+            margin: 0 0 5px 0;
+            color: var(--accent-color);
+        }
+
+        .project-link {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info strong {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Саворовский Кирилл Александрович</h1>
+            <div class="subtitle">Резюме / Портфолио</div>
+        </header>
+
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Привет! Я увлекаюсь технологиями, программированием и созданием визуального контента. Постоянно развиваю свои навыки в разработке и мультимедиа, совмещая технический подход с творческим.</p>
+        </section>
+
+        <section id="interests">
+            <h2>Интересы и навыки</h2>
+            <div class="interests-grid">
+                <div class="interest-tag">Python</div>
+                <div class="interest-tag">HTML</div>
+                <div class="interest-tag">CSS</div>
+                <div class="interest-tag">Монтаж видео</div>
+                <div class="interest-tag">Создание 3D-моделей</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            
+            <div class="project-item">
+                <h3>Протокол обмена ключами Диффи-Хеллмана</h3>
+                <p>Реализация криптографического протокола, позволяющего двум сторонам получить общий секретный ключ, используя незащищенный канал связи.</p>
+                <a class="project-link" href="https://github.com/KirillSavarovskii/---/blob/main/Протокол%20обмена%20ключами%20Диффи-Хелмана" target="_blank">Открыть проект на GitHub →</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Алгоритм шифрования RSA</h3>
+                <p>Программная реализация популярной криптосистемы с открытым ключом, использующейся для безопасной передачи данных.</p>
+                <a class="project-link" href="https://github.com/KirillSavarovskii/RSA_1.1/blob/main/RSA" target="_blank">Открыть проект на GitHub →</a>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> savarovsky07@gmail.com</li>
+                <li><strong>Telegram:</strong> @Ilaisve</li>
+                <li><strong>GitHub:</strong> github.com/KirillSavarovskii</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>

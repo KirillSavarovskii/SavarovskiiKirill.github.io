@@ -1,0 +1,141 @@
+/* Общие настройки страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Контейнер анкеты */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 550px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #1a1a1a;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-subtitle {
+    margin: 0 0 30px 0;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Группы полей ввода */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Стили элементов ввода */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* Чекбоксы и Радио-кнопки */
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.checkbox-label, .radio-label {
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Кнопка */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
